@@ -14,12 +14,34 @@ body{
 }
 
 header img{
-    width:70px;
-    height:70px;
+    position:relative;
+    top:20px;
+    left:30px;
+    width:110px;
+    height:110px;
 }
 
-#headebtns{
+#headerbtns{
+    position:relative;
+    bottom:50px;
     text-align:right;
+    padding-right:30px;
+    
+}
+
+.headerbtn{
+    text-decoration:none;
+    color:black;
+    padding:5px;
+}
+
+#contactbtn{
+    text-decoration:none;
+    color:black;
+    border-style:solid;
+    border-color:#e6bd43;
+    background-color:#e6bd43;
+    border-width: 10px;
 }
 
 h1{
@@ -39,6 +61,10 @@ h4{
 }
 
 h5{
+    font-size:30px;
+}
+
+h6{
     font-size:30px;
 }
 
@@ -74,6 +100,7 @@ h5{
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 10px;
+    padding-bottom:100px;
     
 }
 
@@ -81,7 +108,15 @@ h5{
     height:350px;
     width:300px;
     grid-row: span 2;
+    padding-right:30px;
 
+}
+
+#aboutsection button{
+    border-style:solid;
+    background-color:white;
+    font-weight:bold;
+    height:60px;
 }
 
 #ourservices{
@@ -107,6 +142,41 @@ h5{
     font-weight:bold;
     font-size:25px;
     
+}
+
+#newsletter{
+    text-align:center;
+    background-color:#F3F0F1;
+    height:300px
+}
+
+#newsletter h6{
+    padding-top:30px;
+
+}
+
+#signupbox input{
+    height:50px;
+    width:200px;
+    border-style:none;
+}
+
+#signupbox button{
+    background-color:#e6bd43;
+    border-style:none;
+    position:relative;
+    right:7px;
+    height:50px;
+
+}
+
+footer{
+    background-color:#252525;
+}
+
+footer p{
+    color:white;
+    text-align:center;
 }
 
 
