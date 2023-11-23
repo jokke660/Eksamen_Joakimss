@@ -12,28 +12,96 @@
     <title>About</title>
 </head>
 <body>
-    <div>
+    <div class="about-grid">
         <header>
-            <img src="css/ressurser/logo1.png">
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">Portfolio</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
+            <img src="css/ressurser/logo1.png" alt="Sidens logo">
+            <nav id="headerbtns">
+                <a href="#" class="headerbtn">Home</a>
+                <a href="#" class="headerbtn">Portfolio</a>
+                <a href="#" class="headerbtn">About</a>
+                <a href="#" id="contactbtn">Contact</a>
+                    
             </nav>
         </header>
     <main>
+        <section id="about-our-company-section">
+            <section id="about-our-company-txt">
+                <p>Company name</p>
+                <h2>About our company</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <button>Get in touch with us</button>
+
+            </section>
+        </section>
+        <section id="ourservices">
+            <h3>Our services</h3>
+                <section id="ourservices_subheadings">
+                    <p class="ourservices_subheading">Branding</p>
+                    <p class="ourservices_subheading">Branding</p>
+                    <p class="ourservices_subheading">Branding</p>
+                    <p class="ourservices_subheading">Branding</p>
+                </section>
+                <section id="ourservices_txt">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </section>
+        </section>
+
+        <section id="clients">
+            <h4>Some of our clients</h4>
+            <section id="logos">
+                <img src="css/ressurser/logo1.png" alt="Logo 1">
+                <img src="css/ressurser/logo2.png" alt="Logo 2">
+                <img src="css/ressurser/logo3.png" alt="Logo 3">
+            </section>
+        </section>
+        <div id="contact-us-grid">
+            <section id="contact-us">
+                <h5>Contact us</h5>
+                <section id="message">
+                    <h6>Send us a message</h6>
+                    <p>Name</p>
+                    <input type="text" placeholder="Ola Nordmann...">
+                    <p>Subject</p>
+                    <input type="text" placeholder="Branding...">
+                    <p>Message</p>
+                    <input type="text" placeholder="" id="messagebox">
+                    <button><a href="#">Send message</a></button>
+                </section>
+                <section id="contactinfo">
+                    <h6>Contact information</h6>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident,
+                        similique sunt in culpa, qui officia deserunt mollitia animi
+                    </p>
+                    <ul>
+                        <li>B R A Veien 4, 1757 Halden</li>
+                        <li>69 60 80 00</li>
+                        <li><a href="#">postmottak@hiof.no</a></li>
+                    </ul>
+                </section>
+            </section>
+        </div>
+
+        <section id="mapsection"> <!--Google kart-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1988.926840651511!2d11.353412114566964!3d59.128939787110504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1700688639026!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
 
     </main>
     <footer>
-        <img src="#" alt="none">
+        <img src="css/ressurser/logo1.png" alt="Sidens logo">
         <p>Companyrights Companyname 2023</p>
         <ul> <!--Sosiale medier-->
-            <li>f</li>
-            <li>i</li>
-            <li>l</li>
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
         </ul>
     </footer>
-    <div>
+    </div>
 </body>
 </html>
