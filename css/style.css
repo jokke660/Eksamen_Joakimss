@@ -103,11 +103,13 @@ h6{
     padding-bottom:50px;
 }
 
-#headline button{
+#headline a{
+    text-decoration:none;
+    color:black;
+    border-style:solid;
+    border-color:#e6bd43;
     background-color:#e6bd43;
-    border-style:none;
-    padding:15px;
-    font-weight:bold;
+    border-width: 10px;
 }
 
 #subheading{
@@ -134,11 +136,12 @@ h6{
 
 }
 
-#aboutsection button{
+#aboutsection a{
+    text-decoration:none;
+    color:black;
     border-style:solid;
-    background-color:white;
-    font-weight:bold;
-    height:60px;
+    border-width: 3px;
+    padding:10px;
 }
 
 #ourservices{
@@ -233,6 +236,16 @@ footer p{
 
 }
 
+#about-our-company-txt a{
+    text-decoration:none;
+    color:black;
+    border-style:solid;
+    border-color:#e6bd43;
+    background-color:#e6bd43;
+    border-width: 10px;
+    
+}
+
 #about-our-company-txt h2{
     font-size:35px;
 
@@ -241,15 +254,6 @@ footer p{
 #about-our-company-txt p{
     font-size:20px;
 
-}
-
-#about-our-company-txt button{
-    background-color:#e6bd43;
-    border-style:none;
-    height:50px;
-    width:250px;
-    font-weight:bold;
-    font-size:20px;
 }
 
 #clients{
@@ -355,13 +359,150 @@ footer p{
     background-image:url(ressurser/aboutimg2.png);
     background-size:cover;
     background-position:center;
-    height:70vh;
+    height:50vh;
     overflow:hidden;
 }
 
 #portfolio-txt{
     text-align:center;
     background: rgba(250, 250, 250, 0.8);
+    padding:19vh;
+
+
+    
+}
+
+hr{
+    height:3px;;
+    border-style:none;
+    background-color:#e6bd43;
+    max-width:99%;
+
+}
+
+#explore-jobs-section hr{
+    margin-bottom:60px;
+}
+
+#explore-jobs-section a{
+    margin:15px;
+    background-color:white;
+    padding:10px;
+    text-decoration:none;
+    color:black;
+    border-style:solid;
+    border-width: 1px;
+}
+
+#branding-section{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+
+}
+
+#branding-section article{
+    padding:20px;
+}
+
+#branding-section h4{
+    grid-column:1;
+    grid-row:1;
+} 
+
+#branding-article-1{
+    font-weight:bold;
+    grid-column:1;
+    grid-row:1;
+    display: table;
+    margin: 0 auto;
+}
+
+#branding-article-2{
+    font-weight:bold;
+    grid-column:2;
+    grid-row:1;
+    display: table;
+    margin: 0 auto;
+
+}
+
+#branding-article-3{
+    font-weight:bold;
+    grid-column:3;
+    grid-row:1;
+    display: table;
+    margin: 0 auto;
+
+}
+
+#branding-article-4{
+    font-weight:bold;
+    grid-column:1 / span 2;
+    grid-row:2;
+}
+
+#branding-article-4 img{
+    width:500px;
+}
+
+#design-section{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+}
+
+#design-section article{
+    padding:20px;
+}
+
+#design-article-1{
+    font-weight:bold;
+    grid-column:1;
+    display: table;
+    margin: 0 auto;
+
+}
+#design-article-2{
+    font-weight:bold;
+    grid-column:2;
+    display: table;
+    margin: 0 auto;
+
+}
+#design-article-3{
+    font-weight:bold;
+    grid-column:3;
+    display: table;
+    margin: 0 auto;
+
+}
+
+#development-section{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+#development-section article{
+    padding:20px;
+}
+
+#development-section article img{
+    width:500px;
+}
+
+#development-article-1{
+    font-weight:bold;
+    grid-column:1;
+    display:table;
+    margin:0 auto;
+
+}
+
+#development-article-2{
+    font-weight:bold;
+    grid-column:2;
+    display:table;
+    margin:0 auto;
 }
 
 /*Products end*/
