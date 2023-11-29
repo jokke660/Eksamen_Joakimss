@@ -444,12 +444,13 @@ hr{
     padding-left:10px;
 }
 
+
 #explore-jobs-section hr{
     margin-bottom:60px;
 }
 
 #explore-jobs-section a{
-    margin:15px;
+    margin:10px;
     background-color:white;
     padding:10px;
     text-decoration:none;
@@ -459,178 +460,33 @@ hr{
     font-size:25px;
 }
 
-#branding-section{
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr;
-    grid-template-rows:1fr 1fr;
+/*Articles start*/
+
+.p-section{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-between;
 
 }
 
-#branding-section p{
-    font-size:20px;
+.p-section article img{
+    width:100%;
+    min-width:400px;
+    max-width:692px;
 }
 
-#branding-section h4{
-    grid-column:1;
-    grid-row:1;
-}
-
-#branding-article-1{
-    font-weight:bold;
-    grid-column:1;
-    grid-row:1;
-    display: table;
-    margin: 0 auto;
-    min-width:200px;
-    max-width:350px;
-}
-
-#branding-article-1 img{
-    height:350px;
-    width:350px;
-}
-
-#branding-article-2{
-    font-weight:bold;
-    grid-column:2;
-    grid-row:1;
-    display: table;
-    margin: 0 auto;
-    min-width:200px;
-    max-width:350px;
-
-}
-
-#branding-article-2 img{
-    height:350px;
-    width:350px;
-}
-
-#branding-article-3{
-    font-weight:bold;
-    grid-column:3;
-    grid-row:1;
-    display: table;
-    margin: 0 auto;
-    min-width:200px;
-    max-width:350px;
-}
-
-#branding-article-3 img{
-    height:350px;
-    width:350px;
-}
-
-#branding-article-4{
-    font-weight:bold;
-    grid-column: 1;
-    grid-row:2;
-    display: table;
-    margin: 0 auto;
-    min-width:200px;
-    width:350px;
-}
-
-#branding-article-4 img{
-    height:350px;
-    width:350px;
-}
-
-#design-section{
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr;
-}
-
-#design-section p{
-    font-size:20px;
+.p-section article{
+    margin:1em;
 }
 
 
-#design-article-1{
-    font-weight:bold;
-    grid-column:1;
-    display: table;
-    margin: 0 auto;
-    min-width:200px;
-    width:350px;
-}
-
-#design-article-1 img{
-    height:350px;
-    width:350px;
-}
-
-#design-article-2{
-    font-weight:bold;
-    grid-column:2;
-    display: table;
-    margin: 0 auto;
-    min-width:200px;
-    max-width:350px;
+.p-article{
+    flex: 1;
+    max-width:686px;
 
 }
 
-#design-article-2 img{
-    height:350px;
-    width:350px;
-}
-
-#design-article-3{
-    font-weight:bold;
-    grid-column:3;
-    display: table;
-    margin: 0 auto;
-    min-width:200px;
-    max-width:350px;
-
-}
-
-#design-article-3 img{
-    height:350px;
-    width:350px;
-}
-
-#development-section{
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr;
-}
-
-#development-section p{
-    font-size:20px;
-}
-
-#development-section article{
-    padding-left:10%;
-    padding-right:10%;
-}
-
-#development-article-1{
-    font-weight:bold;
-    grid-column:1;
-    display:table;
-    margin:0 auto;
-    min-width:200px;
-    max-width:350px;
-}
-
-#development-article-1 img{
-    height:350px;
-    width:350px;
-}
-
-#development-article-2{
-    font-weight:bold;
-    grid-column:2;
-    display:table;
-    margin:0 auto;
-    min-width:200px;
-    max-width:350px;
-}
-
-#development-article-2 img{
-    height:350px;
-    width:350px;
-}
+/*Articles end*/
 
 
 /*Products end*/
@@ -729,7 +585,24 @@ hr{
         display:flex;
         flex-direction:column;
         text-align:center;
+    }
 
+    #clients{
+        max-height:800px;
+        height:auto;
+    }
+
+    #logos{
+        display:flex;
+        justify-content:space-around;
+        flex-flow:row wrap;
+    }
+
+    #logos img{
+        margin:1em;
+        flex:1;
+        max-width:150px;
+        max-height:150px;
     }
 
     #message{
@@ -779,23 +652,6 @@ hr{
         grid-template-areas:"header" "main" "footer";
 
     }
-
-    #branding-section{
-        display:flex;
-        flex-direction:column;
-    }
-
-
-    #design-section{
-        display:flex;
-        flex-direction:column;
-    }
-
-    #development-section{
-        display:flex;
-        flex-direction:column;
-    }
-
 
 
     /*Products end*/
