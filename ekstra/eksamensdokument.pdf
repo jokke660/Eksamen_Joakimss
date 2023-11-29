@@ -1,0 +1,44 @@
+Eksamensdokument Joakim Skjær Svendsen.
+
+Sjekkliste.
+Minstekrav E:
+    -Validering: OK
+    -Div kvote: OK
+    -Semantiske tagger: OK
+    -Dummy data: OK
+    -Eksamensdokument: OK
+    -Menypunkter lenket til alle sider: OK
+    -Logo linker til index.html: OK
+    -Lenking av knapper på forsiden: OK
+    -Lenking av knapper på about us: OK
+    -Lenking til FB, IG og Linkedin i footer: OK
+    -Ett stilark: OK
+    -Websafe font: OK
+    -Artikkelkort min/max bredde: !OK Men:
+    Disse stemmer ikke helt med bildene i oppgaveteksten.
+    Jeg har utført dette slik det står i minstekravet, men dette gjør jo også slik at alle artikkelkortene blir samme størrelse.
+    I bildet som ligger i oppgaveteksten er det ikke slik, der tar f.eks. det siste bildet i branding-seksjonen dobbelt så stor plass.
+
+    Jeg forstår at oppgaveteksten sannsynligvis skal vise fram hvordan dette vil se ut om man lar artikkelkortene vokse utover 350px så lenge
+    det er plass på neste rad, men dette blir ikke relevant før minstekrav for karakter C. Siden products.html-siden er laget mer detaljert og lik
+    portfolio-siden i demovideoen enn skissen av forsiden i oppgavebeskrivelsen regner jeg med at tanken bak dette er å vise hvordan artikkelkortene
+    skal se ut når man begynner å inkludere flex-grow i koden.
+
+    Her har jeg valgt å følge oppgavebeskrivelsen slik det står skrevet, altså at alle artikkelkortene er like store. Så har jeg plassert dem
+    slik de er plassert i skissen. De stemmer da så godt som mulig ift. skissen, men de er mindre, også ift. design-seksjonen, da kravet er at artikkelkortene skal ha en
+    maksimal bredde på 350px.
+
+    Siden oppgaveteksten ikke spesifiserer størrelsen på selve bildene innenfor artikkelkortene har jeg latt disse fylle bredden av artikkelkortene, og gjort høyden like stor.
+
+Minstekrav D:
+    -"Read more about our services" lenket til about.html: OK
+    -"Read more about us" lenket til about.html: OK
+    -"Contact us" lenket til seksjonen som inneholder kontaktskjema på about.html: OK
+    -"Development"-knapp lenket til development-seksjonen: OK
+    -"Design"-knapp lenket til design-seksjonen: OK
+    -"Branding"-knapp lenket til branding-seksjonen: OK
+
+Kildehenvisning:
+https://www.digitalocean.com/community/tutorials/css-css-units-explained | Denne siden forklarer hva de forskjellige enhetene i CSS betyr.
+https://stackoverflow.com/questions/9182978/semi-transparent-color-layer-over-background-image | box-shadow kode.
+

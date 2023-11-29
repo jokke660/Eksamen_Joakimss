@@ -14,7 +14,7 @@
 <body>
     <div id="products-grid">
         <header>
-            <a href="index.html"><img src="css/ressurser/logo1.png" alt="Sidens logo"></a>
+            <a href="index.html" id="logo-img"><img src="css/ressurser/logo1.png" alt="Sidens logo"></a>
             <nav id="headerbtns">
                 <a href="index.html" class="headerbtn">Home</a>
                 <a href="products.html" class="headerbtn">Portfolio</a>
@@ -24,19 +24,20 @@
             </nav>
         </header>
     <main>
+        <a href="products.html" id="top-btn"><i class="fa-solid fa-arrow-up"></i></a>
         <div id="portfolio-section">
             <div id="portfolio-txt">
                 <h2>Portfolio</h2>
             </div>
         </div>
         <div id="explore-jobs-section">
-            <h3>Explore previous jobs</h3>
+            <h3 class="products-h">Explore previous jobs</h3>
             <hr>
             <a href="products.html#branding-section">Branding</a>
-            <a href="produtcs.html#design-section">Design</a>
-            <a href="produtcs.html#development-section">Development</a>
+            <a href="products.html#design-section">Design</a>
+            <a href="products.html#development-section">Development</a>
         </div> <!--Div brukes for å unngå å dele disse i seksjoner-->
-        <h4>Branding</h4>
+        <h4 class="products-h">Branding</h4>
         <hr>
         <section id="branding-section">
             <article id="branding-article-1">
@@ -56,7 +57,7 @@
                 <p>Et harum quidem</p>
             </article>
         </section>
-        <h5>Design</h5>
+        <h5 class="products-h">Design</h5>
         <hr>
         <section id="design-section">
             <article id="design-article-1">
@@ -73,7 +74,7 @@
             </article>
 
         </section>
-        <h6>Development</h6>
+        <h6 class="products-h">Development</h6>
         <hr>
         <section id="development-section">
             <article id="development-article-1">
@@ -90,9 +91,11 @@
         <img src="css/ressurser/logo1.png" alt="Sidens logo">
         <p>Companyrights Companyname 2023</p> 
         <!--Sosiale medier-->
-        <a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
-        <a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
-        <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+        <section>
+            <a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+        </section>
     </footer>
     </div>
 </body>

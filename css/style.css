@@ -11,16 +11,36 @@ body{
     width:100%;
 }
 
+#index-grid{
+    display: grid;
+    grid-template-areas:"header header header" "main main main" "footer footer footer";
+}
+#logo-img{
+    width:110px;
+    height:110px;
+    position:relative;
+    top:20px;
+    left:30px;
+    z-index:1; /*Her har jeg brukt z-index på grunn av hvordan <nav> i
+    headeren legger seg over logoen, som gjør at den ikke kan klikkes på midten.
+    Med z-index på 1, og z-index på 0 i <nav>-elementet overlapper logoen <nav>,
+    som løser dette problemet.*/
+}
 
-.index-grid{
-    display:grid;
+header{
+    grid-area:header;
+}
+
+main{
+    grid-area:main;
+}
+
+footer{
+    grid-area:footer;
 }
 
 
 header img{
-    position:relative;
-    top:20px;
-    left:30px;
     width:110px;
     height:110px;
 }
@@ -30,6 +50,7 @@ header img{
     bottom:50px;
     text-align:right;
     padding-right:30px;
+    z-index:0; /*z-index: 0 for å legge denne under logoen.*/
     
 }
 
@@ -72,6 +93,25 @@ h6{
     font-size:30px;
 }
 
+#top-btn{
+    background-color:#252525;
+    color:white;
+    border-radius:5px;
+    width:40px;
+    height:70px;
+    text-align:center;
+    position:fixed;
+    left:96vw;
+    top:80vh;
+    z-index:2;
+
+}
+
+#top-btn i{
+    position:relative;
+    top:25%;
+}
+
 
 #videowrapper{
     width:100vw;
@@ -82,7 +122,6 @@ h6{
 #backvideo{
     width: 100%;
 }
-
 
 #headline{
     text-align:center;
@@ -118,7 +157,7 @@ h6{
 }
 
 #aboutsection{
-    border-style:solid;
+    background-color:#e6bd43;
     align-items:center;
     padding:20px;
     display: grid;
@@ -145,29 +184,18 @@ h6{
 }
 
 #ourservices{
+    display:flex;
     text-align:center;
-    
 }
 
-
-#ourservices_subheadings{
-    width:100%;
-    display:inline-flex;
-    justify-content:space-around;
+.ourservices-headline{
+    text-align:center;
 }
 
-#ourservices_txt{
-    width:100%;
-    display: inline-flex;
-    justify-content:space-around;
-
-}
-
-.ourservices_subheading{
+.ourservices-subheading{
     font-weight:bold;
-    font-size:25px;
-    
 }
+
 
 #newsletter{
     text-align:center;
@@ -196,12 +224,40 @@ h6{
 }
 
 footer{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
     background-color:#252525;
+    width:100%;
+}
+
+footer img{
+    padding-left:10px;
+    padding-top:2vh;
+    grid-column:1;
+    width:100px;
 }
 
 footer p{
+    grid-column:2;
     color:white;
     text-align:center;
+}
+
+footer section{
+    padding-top:50px;
+    text-align:right;
+}
+
+footer a{
+    grid-column:3;
+    padding-left:15px;
+    padding-right:10px;
+    width:30px;
+    height:30px;
+}
+
+footer a i{
+    color:white;
 }
 
 
@@ -209,6 +265,7 @@ footer p{
 
 .about-grid{
     display:grid;
+    grid-template-areas:"header header header" "main main main" "footer footer footer";
     width:100%;
 }
 
@@ -227,10 +284,11 @@ footer p{
     display:inline-block;
     position:relative;
     top:15%;
-    left: 60%; 
+    left:60%;
     width: 50%;
     max-width: 600px; 
-    background: rgba(250, 250, 250, 0.8);
+    background: rgba(250, 250, 250, 0.8); /*Den siste verdien justerer gjennomsiktigheten.
+    https://stackoverflow.com/questions/9182978/semi-transparent-color-layer-over-background-image*/
     line-height: 1.5;
     padding: 5px 0 1rem 1rem;
 
@@ -295,7 +353,7 @@ footer p{
 }
 
 #message p{
-    font-size:20px
+    font-size:20px;
 }
 
 #message a{
@@ -330,7 +388,7 @@ footer p{
 }
 
 #contactinfo p{
-    font-size:20px
+    font-size:20px;
 }
 
 #contactinfo ul li{
@@ -342,6 +400,7 @@ footer p{
 }
 
 #mapsection iframe{
+    display:grid;
     width:100%;
 
 }
@@ -351,6 +410,8 @@ footer p{
 /*Products start*/
 
 #products-grid{
+    display:grid;
+    grid-template-areas:"header header header" "main main main" "footer footer footer";
     width:100%;
 }
 
@@ -377,7 +438,10 @@ hr{
     border-style:none;
     background-color:#e6bd43;
     max-width:99%;
+}
 
+.products-h{
+    padding-left:10px;
 }
 
 #explore-jobs-section hr{
@@ -392,6 +456,7 @@ hr{
     color:black;
     border-style:solid;
     border-width: 1px;
+    font-size:25px;
 }
 
 #branding-section{
@@ -401,14 +466,14 @@ hr{
 
 }
 
-#branding-section article{
-    padding:20px;
+#branding-section p{
+    font-size:20px;
 }
 
 #branding-section h4{
     grid-column:1;
     grid-row:1;
-} 
+}
 
 #branding-article-1{
     font-weight:bold;
@@ -416,6 +481,13 @@ hr{
     grid-row:1;
     display: table;
     margin: 0 auto;
+    min-width:200px;
+    max-width:350px;
+}
+
+#branding-article-1 img{
+    height:350px;
+    width:350px;
 }
 
 #branding-article-2{
@@ -424,7 +496,14 @@ hr{
     grid-row:1;
     display: table;
     margin: 0 auto;
+    min-width:200px;
+    max-width:350px;
 
+}
+
+#branding-article-2 img{
+    height:350px;
+    width:350px;
 }
 
 #branding-article-3{
@@ -433,17 +512,28 @@ hr{
     grid-row:1;
     display: table;
     margin: 0 auto;
+    min-width:200px;
+    max-width:350px;
+}
 
+#branding-article-3 img{
+    height:350px;
+    width:350px;
 }
 
 #branding-article-4{
     font-weight:bold;
-    grid-column:1 / span 2;
+    grid-column: 1;
     grid-row:2;
+    display: table;
+    margin: 0 auto;
+    min-width:200px;
+    width:350px;
 }
 
 #branding-article-4 img{
-    width:500px;
+    height:350px;
+    width:350px;
 }
 
 #design-section{
@@ -451,43 +541,67 @@ hr{
     grid-template-columns:1fr 1fr 1fr;
 }
 
-#design-section article{
-    padding:20px;
+#design-section p{
+    font-size:20px;
 }
+
 
 #design-article-1{
     font-weight:bold;
     grid-column:1;
     display: table;
     margin: 0 auto;
-
+    min-width:200px;
+    width:350px;
 }
+
+#design-article-1 img{
+    height:350px;
+    width:350px;
+}
+
 #design-article-2{
     font-weight:bold;
     grid-column:2;
     display: table;
     margin: 0 auto;
+    min-width:200px;
+    max-width:350px;
 
 }
+
+#design-article-2 img{
+    height:350px;
+    width:350px;
+}
+
 #design-article-3{
     font-weight:bold;
     grid-column:3;
     display: table;
     margin: 0 auto;
+    min-width:200px;
+    max-width:350px;
 
+}
+
+#design-article-3 img{
+    height:350px;
+    width:350px;
 }
 
 #development-section{
     display:grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr;
+}
+
+#development-section p{
+    font-size:20px;
 }
 
 #development-section article{
-    padding:20px;
-}
-
-#development-section article img{
-    width:500px;
+    padding-left:10%;
+    padding-right:10%;
 }
 
 #development-article-1{
@@ -495,7 +609,13 @@ hr{
     grid-column:1;
     display:table;
     margin:0 auto;
+    min-width:200px;
+    max-width:350px;
+}
 
+#development-article-1 img{
+    height:350px;
+    width:350px;
 }
 
 #development-article-2{
@@ -503,9 +623,185 @@ hr{
     grid-column:2;
     display:table;
     margin:0 auto;
+    min-width:200px;
+    max-width:350px;
 }
 
+#development-article-2 img{
+    height:350px;
+    width:350px;
+}
+
+
 /*Products end*/
+
+/*Media queries*/
+@media (max-width: 960px) {
+    #index-grid{
+        display:grid;
+        grid-template-areas:"header" "main" "footer";
+    }
+
+    #top-btn{
+        display:none;
+    }
+
+
+    #logo-img{
+        padding-top:25px;
+        padding-bottom:70px;
+        position:static;
+    }
+
+    #headerbtns{
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+        width:119px;
+        padding:0;
+        margin:0;
+    }
+
+    header{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+
+    #videowrapper{
+        display:none;
+    }
+
+    #headline{ /*Bytter videoen til bilde slik som i demovideoen.*/
+        position:relative;
+        top:0;
+        padding-top:20px;
+        padding-bottom:50px;
+        background-image:url(ressurser/aboutimg.png);
+        box-shadow: inset 0 0 0 300px rgba(255, 255, 255, 0.5); /*box-shadow kan brukes sammen med background-image
+        slik at man får den hvite gjennomsiktige fargen over bildet. Den siste verdien(0.5) justerer gjennomsiktigheten.
+        https://stackoverflow.com/questions/9182978/semi-transparent-color-layer-over-background-image*/
+
+    }
+
+    #headline h2{
+        font-size:40px;
+
+    }
+
+    #headline p{
+        font-size:22px;
+    }
+
+    #ourservices{
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+    }
+    
+    .about-grid{
+        display:grid;
+        grid-template-areas:"header" "main" "footer";
+    }
+
+    #about-our-company-section{
+        height:auto;
+        width:100%;
+
+    }
+
+    #about-our-company-txt{
+        display:flex;
+        flex-direction:column;
+        padding:25px;
+        left:25%;
+        top:0;
+        margin-top:50px;
+        margin-bottom:50px;
+    }
+
+    #ourservices article{
+        padding-bottom:50px;
+    }
+
+    #aboutsection{
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+
+    }
+
+    #message{
+        display:flex;
+        flex:1;
+        flex-direction:column;
+        align-items:center;
+        grid-column:1;
+        grid-row:2;
+        margin:0;
+        padding:0;
+    }
+
+    #message input{
+        max-width:350px;
+
+    }
+
+    #message button{
+        margin:0;
+        margin-top:20px;
+
+    }
+
+    #contactinfo{
+        grid-column:1;
+        grid-row:3;
+        margin:0;
+        padding:0;
+    }
+
+    #contactinfo h6{
+        padding-left:50px;
+    }
+
+    #contactinfo p{
+        padding-left:50px;
+    }
+
+    #contactinfo ul{
+        padding-left:50px;
+    }
+
+    /*Products start*/
+
+    #products-grid{
+        grid-template-areas:"header" "main" "footer";
+
+    }
+
+    #branding-section{
+        display:flex;
+        flex-direction:column;
+    }
+
+
+    #design-section{
+        display:flex;
+        flex-direction:column;
+    }
+
+    #development-section{
+        display:flex;
+        flex-direction:column;
+    }
+
+
+
+    /*Products end*/
+
+}
+
 
 
 
