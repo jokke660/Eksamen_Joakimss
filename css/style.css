@@ -1,20 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap');
+
 html{
     font-size: calc(1em + 1vw);
 }
 
 body{
     display:flex;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto; /*For å sentrere siden. Hentet fra WEBUTVIKLING2023/MICRO/css/style.css*/
     background-color:#ffff;
-    width:100%;
 }
 
 #index-grid{
     display: grid;
     grid-template-areas:"header header header" "main main main" "footer footer footer";
 }
+
 #logo-img{
     width:110px;
     height:110px;
@@ -27,8 +30,10 @@ body{
     som løser dette problemet.*/
 }
 
+
 header{
     grid-area:header;
+
 }
 
 main{
@@ -37,6 +42,7 @@ main{
 
 footer{
     grid-area:footer;
+
 }
 
 
@@ -101,7 +107,7 @@ h6{
     height:70px;
     text-align:center;
     position:fixed;
-    left:96vw;
+    left:90vw;
     top:80vh;
     z-index:2;
 
@@ -196,6 +202,14 @@ h6{
     font-weight:bold;
 }
 
+#ourservices i{ /*Ikoner services*/
+    font-size:40px;
+}
+
+#ourservices p{
+    font-size:25px;
+}
+
 
 #newsletter{
     text-align:center;
@@ -252,12 +266,11 @@ footer a{
     grid-column:3;
     padding-left:15px;
     padding-right:10px;
-    width:30px;
-    height:30px;
 }
 
 footer a i{
     color:white;
+    font-size:25px;
 }
 
 
@@ -284,18 +297,19 @@ footer a i{
     display:inline-block;
     position:relative;
     top:15%;
-    left:60%;
+    left:50%;
     width: 50%;
     max-width: 600px; 
     background: rgba(250, 250, 250, 0.8); /*Den siste verdien justerer gjennomsiktigheten.
     https://stackoverflow.com/questions/9182978/semi-transparent-color-layer-over-background-image*/
     line-height: 1.5;
-    padding: 5px 0 1rem 1rem;
+    padding: 5px 1rem 1rem 1rem;
 
 }
 
 #about-our-company-txt a{
     text-decoration:none;
+    text-align:center;
     color:black;
     border-style:solid;
     border-color:#e6bd43;
@@ -464,7 +478,7 @@ hr{
 
 .p-section{
     display:flex;
-    flex-flow:row wrap;
+    flex-flow:row wrap; /*Dette gjør at flex-elementene legger seg i rader etter hvor de har plass | https://www.youtube.com/watch?v=wXOKiGypt6Y*/
     justify-content:space-between;
 
 }
@@ -499,7 +513,9 @@ hr{
     }
 
     #top-btn{
-        display:none;
+        position:fixed;
+        left:85vw;
+        top:80vh;
     }
 
 
@@ -524,6 +540,13 @@ hr{
         align-items:center;
     }
 
+    footer{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        padding-bottom:20px;
+    }
+
 
     #videowrapper{
         display:none;
@@ -542,7 +565,7 @@ hr{
     }
 
     #headline h2{
-        font-size:40px;
+        font-size:45px;
 
     }
 

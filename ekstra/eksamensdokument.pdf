@@ -1,5 +1,6 @@
 Eksamensdokument Joakim Skjær Svendsen.
 
+
 Sjekkliste.
 Minstekrav E:
     -Validering: OK
@@ -30,7 +31,7 @@ Minstekrav E:
 
     Siden oppgaveteksten ikke spesifiserer størrelsen på selve bildene innenfor artikkelkortene har jeg latt disse fylle bredden av artikkelkortene, og gjort høyden like stor.
 
-Minstekrav D:
+Krav D:
     -"Read more about our services" lenket til about.html: OK
     -"Read more about us" lenket til about.html: OK
     -"Contact us" lenket til seksjonen som inneholder kontaktskjema på about.html: OK
@@ -38,7 +39,55 @@ Minstekrav D:
     -"Design"-knapp lenket til design-seksjonen: OK
     -"Branding"-knapp lenket til branding-seksjonen: OK
 
+Krav C:
+    -FB, IG og Linkedin ikoner fra font-awesome, endret til hvit og gjort større: OK
+        Disse er hvite og satt til 30px 
+    -Ikoner på services i index og about, endret størrelse: OK
+        Disse er satt til 40px
+    -Header-område på forside har bakgrunn: OK
+        Ja, har video på desktop og bilde på mobile.
+    -CSS Grid og flexbox brukt: OK
+    -Sider er responsive: OK
+    -Tre grid-kolonner på desktop og en på mobile: OK
+    -Artikkelkort i products.html er responsive, vokser og minker,
+     og blir ikke større enn 692px: OK
+    -Artikkelkort faller under hverandre ved nedskalering: OK
+    -Goolge Font: OK
+    -Maks bredde på 1600px: OK
+        Dette fører til hvite felt på sidene av nettstedet når den vises i fullskjerm på en 1920x1080 monitor.
+        Jeg sjekket WEBUTVIKLING2023-mappa for å se hvordan ting ser ut der, og sidene som har maks-bredde blir også slik.
+        Her er det mer synlig i og med at det benyttes forskjellige farger.
+
+Krav B:
+    -Title-attributter, tastaturnavigering, aria roller og labels: IKKE UTFØRT
+    -Brukbart Google kart med full bredde: OK
+        Satt til skolens adresse.
+    -Artikkelkort øker i størrelse når man hovrer over: IKKE UTFØRT
+    -Menypunkt markeres med gul understrek og font blir bold: IKKE UTFØRT
+    -Knapper endrer farger ved hovring: IKKE UTFØRT
+
+Krav A: 
+    -Microdata: IKKE UTFØRT
+    -Favicon: OK
+    -Video på forside, spiller i loop, er muted, og har tekst og knapp lagt over: DELVIS OK
+        Har ikke fått til gjennomsiktig overlay
+    -Tilbake til toppen-knapp: OK
+    -Video forsvinner og byttes ut med bakgrunnsbilde i media query: OK
+    -Hover effekt på desktop: IKKE UTFØRT
+
+
+
+Jeg har valgt å prøve på karakter C.
+Jeg har utført noen få punkter fra kravene for B og A.
+Det oppsto problemer da jeg kom til siste krav for karakter C, da siden skulle justeres til en maks-bredde på 1600px.
+Dette fungerer forsåvidt, men da er det blanke/hvite felt på sidene av nettstedet da skjermstørrelsen passerer 1600px i bredde, noe den gjør på min skjerm.
+
+
+
 Kildehenvisning:
 https://www.digitalocean.com/community/tutorials/css-css-units-explained | Denne siden forklarer hva de forskjellige enhetene i CSS betyr.
 https://stackoverflow.com/questions/9182978/semi-transparent-color-layer-over-background-image | box-shadow kode.
+https://github.com/HIO-Webutvikling/WEBUTVIKLING2023/blob/main/MICRO/css/style.css | Jeg så på denne koden for å sentrere siden.
+https://fonts.google.com/specimen/Montserrat | Google font importert.
+https://www.youtube.com/watch?v=wXOKiGypt6Y | Hvordan få til en ordentlig repsonsiv layout med flexbox. Laget av "Six Minutes. Smarter."
 
